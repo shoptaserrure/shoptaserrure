@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #003380;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #4b5563;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #003380;
+
+  --color-primary: #003380;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f9fafb;
+  --color-secondary-foreground: #003380;
+
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #4b5563;
+
+  --color-accent: #22c55e;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #e30613;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #f3f4f6;
+  --color-input: #f3f4f6;
+  --color-ring: #003380;
+
+  --color-brand-blue: #003380;
+  --color-brand-green: #22c55e;
+  --color-emergency-red: #e30613;
+  --color-whatsapp-green: #25d366;
+  --color-text-gray: #4b5563;
+  --color-bg-secondary: #f9fafb;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+    @keyframes accordion-up {
+      from {
+        height: var(--radix-accordion-content-height);
+      }
+      to {
+        height: 0;
+      }
+    }
+    @keyframes heroShine {
+      0% { transform: translateX(-120%); }
+      100% { transform: translateX(120%); }
+    }
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0) scale(1.05); }
+      50% { transform: translateY(-10px) scale(1.08); }
+    }
+    @keyframes heroSlow {
+      0% { transform: scale(1.05); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1.05); }
+    }
+  }
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #f3f4f6;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #003380;
+    --card: #ffffff;
+    --card-foreground: #4b5563;
+    --popover: #ffffff;
+    --popover-foreground: #003380;
+    --primary: #003380;
+    --primary-foreground: #ffffff;
+    --secondary: #f9fafb;
+    --secondary-foreground: #003380;
+    --muted: #f3f4f6;
+    --muted-foreground: #4b5563;
+    --accent: #22c55e;
+    --accent-foreground: #ffffff;
+    --destructive: #e30613;
+    --destructive-foreground: #ffffff;
+    --border: #f3f4f6;
+    --input: #f3f4f6;
+    --ring: #003380;
+    --radius: 1.5rem;
+    --sidebar-background: #f7f7f7;
+    --sidebar-foreground: #404040;
+    --sidebar-primary: #003380;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f0f0f0;
+    --sidebar-accent-foreground: #003380;
+    --sidebar-border: #d4d4d8;
+    --sidebar-ring: #3b82f6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-gray font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-extrabold tracking-tight text-brand-blue;
+  }
+
+  h1 {
+    @apply text-[40px] md:text-[60px] leading-[1.1];
+  }
+
+  h2 {
+    @apply text-[32px] md:text-[48px] leading-[1.2];
+  }
+
+  h3 {
+    @apply text-[20px] font-bold leading-[1.4];
+  }
+
+  p {
+    @apply text-[18px] font-medium leading-[1.6];
+  }
+
+  .container {
+    @apply mx-auto px-4 max-w-[1280px];
+  }
+
+  .font-nav {
+    @apply font-display font-bold text-[16px];
+  }
+
+  .font-button {
+    @apply font-display font-extrabold text-[18px];
+  }
+
+  .font-badge {
+    @apply font-display font-semibold text-[14px];
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .shadow-heavy {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .transition-standard {
+    @apply duration-300 ease-in-out;
+  }
+}
