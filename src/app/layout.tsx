@@ -6,6 +6,7 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import StructuredData from "@/components/SEO";
 import StickyCallBar from "@/components/StickyCallBar";
+import { Analytics } from "@vercel/analytics/next";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -81,6 +82,7 @@ export default function RootLayout({
         <div className="min-h-dvh pb-24">{children}</div>
         <StickyCallBar />
         <VisualEditsMessenger />
+        <Analytics />
       </body>
     </html>
   );
