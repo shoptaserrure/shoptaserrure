@@ -12,8 +12,7 @@ const PricingTransparency = () => {
               Des tarifs <span className="text-[#22c55e]">justes et transparents</span>
             </h2>
             <p className="text-[18px] md:text-[20px] text-[#4b5563] mb-8 leading-[1.6] font-medium max-w-2xl">
-              Chez Shopta Serrure, nous croyons qu'une urgence ne doit pas être synonyme de mauvaise surprise. 
-              C'est pourquoi nous nous engageons sur une politique de prix claire.
+              Serrurier urgence paris, ouverture de porte, remplacement de serrure, dépannage 24H/24 en île-de-france. intervention rapide et devis gratuit, serrurier qualifiés.
             </p>
             
             <ul className="space-y-4 mb-10">
