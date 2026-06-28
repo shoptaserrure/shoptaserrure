@@ -9,11 +9,17 @@ export const metadata = {
   "serrurier",
   "dépannage serrurerie",
   "ouverture de porte",
-  "urgence",
+  "urgence serrurerie",
   "porte claquée",
   "changement de serrure",
   "serrurier paris",
-  "serrurier île-de-france"
+  "serrurier île-de-france",
+  "shopta serrure",
+  "shoptaserrure",
+  "shop ta serrure",
+  "shopta serrur",
+  "chopta serrure",
+  "shop taserrure"
   ]
 };
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
