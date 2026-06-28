@@ -13,10 +13,7 @@ export const metadata = {
   "porte claquée",
   "changement de serrure",
   "serrurier paris",
-  "serrurier île-de-france",
-  "shopta serrure",
-  "shop taserrure",
-  "shoptaserrure"
+  "serrurier île-de-france"
   ]
 };
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
