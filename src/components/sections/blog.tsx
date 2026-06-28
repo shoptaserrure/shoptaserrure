@@ -43,7 +43,7 @@ export default function BlogSection() {
         {/* Section Header */}
         <div className="max-w-2xl mb-16">
             <h2 className="text-[32px] md:text-[48px] font-extrabold text-[#003380] leading-[1.2] mb-4">
-              Le Mag Sécurité ShopTaSerrure – Conseils & Astuces pour Protéger Votre Foyer
+              Le Mag Sécurité Shopta serrure – Conseils & Astuces pour Protéger Votre Foyer
             </h2>
           <p className="text-[#4B5563] text-[18px] font-medium leading-[1.6]">
             Conseils, actualités et guides pratiques pour votre sécurité au quotidien.
